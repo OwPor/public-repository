@@ -1,0 +1,34 @@
+<!DOCTPYE HTML>
+<html>
+<head>
+<title>onClick
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#lol {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<button onClick="duh()">Click me!</button>
+<div id="lol">Surprise!</div>
+
+<script>
+function duh() {
+  var q = document.getElementById("lol");
+  if (q.style.display === "none") {
+    q.style.display = "block";
+    alert("Open")
+  } else {
+    q.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
